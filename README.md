@@ -1,8 +1,8 @@
 # Clinical Risk Pipeline
 
-![Live App Demo](output\dashboard-image.png) 
+![Live App Demo](<img width="940" height="409" alt="dashboard-image" src="https://github.com/user-attachments/assets/b89e5733-24c6-4fd0-b08e-23dc85cabf6a" />) 
 
-**[View the Live Dashboard Here](https://connect.posit.cloud/andrew-naranjo/content/019f2006-0a93-f1eb-b4e3-4e5fbd383118)**
+**[View the Live Dashboard Here](https://019f2006-0a93-f1eb-b4e3-4e5fbd383118.share.connect.posit.cloud/)**
 
 ## Overview
 An end-to-end clinical data pipeline and interactive dashboard used to predict patient outcomes using classification and regression models. This repository contains the Phase 1 deployment, which uses synthetic clinical data from [this Kaggle dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset). 

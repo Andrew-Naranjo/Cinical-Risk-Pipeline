@@ -1,2 +1,5 @@
 .env
 *.csv
+.posit/
+data-raw/
+*.png

@@ -5,10 +5,10 @@ library(ggplot2)
 
 # 1. Load Models
 cat("Loading classification model...\n")
-rf_class_model <- readRDS("rf_model_classification_testresults.rds")
+rf_class_model <- readRDS("output/rf_model_classification_testresults.rds")
 
 cat("Loading regression model...\n")
-rf_reg_model <- readRDS("rf_model_regression_billingamount.rds")
+rf_reg_model <- readRDS("output/rf_model_regression_billingamount.rds")
 
 ################ UI
 ui <- fluidPage(

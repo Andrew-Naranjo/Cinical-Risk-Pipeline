@@ -32,7 +32,7 @@ predictions <- predict(rf_fit, test_data) %>%
   bind_cols(test_data %>% select(billing_amount))
 
 
-saveRDS(rf_fit, "rf_model_regression_billingamount.rds")
+saveRDS(rf_fit, "output/rf_model_regression_billingamount.rds")
 
 #-----------------------------------------------------------#
 ui_choices <- list(
@@ -41,4 +41,4 @@ ui_choices <- list(
   admission = unique(patient_df$admission_type),
   insurance = unique(patient_df$insurance_provider)
 )
-saveRDS(ui_choices, "ui_choices.rds")
+saveRDS(ui_choices, "output/ui_choices.rds")

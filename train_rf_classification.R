@@ -36,5 +36,5 @@ predictions <- predict(rf_fit, test_data) %>%
 accuracy <- metrics(predictions, truth = test_results, estimate = .pred_class)
 print(accuracy)
 
-saveRDS(rf_fit, "rf_model_classification_testresults.rds")
+saveRDS(rf_fit, "output/rf_model_classification_testresults.rds")
   

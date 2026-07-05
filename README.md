@@ -1,17 +1,23 @@
-# Project Status: Phase 1
+# Clinical Risk Pipeline
 
-This repository demonstrates a complete, end-to-end clinical data pipeline. I engineered a PostgreSQL database, an automated ETL pipeline, and a predictive dashboard using Python, R, and RShiny.
+![Live App Demo](output\dashboard-image.png) 
 
-Note: To comply with healthcare data privacy standards, the pipeline is currently populated with a synthetic test dataset from Kaggle while awaiting credentialed access
-to the MIMIC-IV clinical dataset.
+**[View the Live Dashboard Here](https://connect.posit.cloud/andrew-naranjo/content/019f2006-0a93-f1eb-b4e3-4e5fbd383118)**
 
-## Architecture
-1. **Storage(PostgreSQL)**:A local relational database housing the raw patient records.
+## Overview
+An end-to-end clinical data pipeline and interactive dashboard used to predict patient outcomes using classification and regression models. This repository contains the Phase 1 deployment, which uses synthetic clinical data from [this Kaggle dataset](https://www.kaggle.com/datasets/prasad22/healthcare-dataset). 
 
-2. **Machine Learning (tidymodels)**: R scripts that connect securely to the database, extract the necessary data, and train predictive models.
+## Stack
+* **Language:** R
+* **Frontend:** Shiny
+* **Modeling:** `tidymodels`
+* **Database:** PostgreSQL (Local)
+* **Deployment:** Posit Connect Cloud
 
-3. **Deployment (R/Shiny)**: A secure web application hosted on Posit Cloud that utilizes the pre-trained model weights to generate inference without exposing the database.
+## Project Architecture 
+1. **ETL & Data Engineering:** Data is extracterd from a local PostgreSQL database and transformed for modeling.
+2. **Statistical Modeling:** Two models (Classification for risk stratification, Regression for continuous outcome prediction) were trained using the `tidymodels` framework.
+3. **Interactive Dashboard:** Deployed a Shiny web application for users to input clinical parameters and receive real-time risk predictions.
 
-# Future Roadmap (Phase 2)
-
-Upon receiving credentialed access to the PhysioNet MIMIC-IV database, the pipeline will be updated to execute SQL operations across admission, lab event, and demographic tables to train the models on real-world clinical relationships.
+## Roadmap: Phase 2
+The next phase of this project involves migrating from synthetic data to the **MIMIC-IV Clinical Database**. I'll first use the demo dataset to ask some interesting questions and replace the current dataset with it.
